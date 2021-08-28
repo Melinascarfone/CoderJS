@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+
+    <title>SebaMacaya-JS</title>
+  </head>
+  <body>
+    <!--  HEADER - NAVBAR -->
+    <header>
+      <!--Buscador-->
+      <div class="buscador">
+        <nav class="navbar navbar-dark bg-dark justify-content-center">
+          <a class="navbar-brand" href="#">Logo tienda</a>
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Buscar
+            </button>
+            <img src="imagenes/carrito.png" alt="logo carrito" />
+          </form>
+        </nav>
+      </div>
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto w-100 justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Productos <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Arma tu PC
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">AMD</a>
+                <a class="dropdown-item" href="#">Intel</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Mi cuenta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">INFORMACION DEL PEDIDO</a>
+                <a class="dropdown-item" href="#">INFORMAR PAGOS</a>
+                <a class="dropdown-item" href="#">CANCELAR PEDIDO</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">AYUDA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Form Cantidad de elementos-->
+      <form id="formCantidadHardware">
+        <label for="cantidadHardware"
+          >Ingrese la cantidad de hardware que desea crear</label
+        >
+        <input
+          type="number"
+          placeholder="Numero aqui"
+          size="50px"
+          id="cantidadHardware"
+          min="0"
+          name="cantidadHardware"
+        />
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+      <var id="cantidadSeleccionada"> </var>
+
+      <!--Creo productos-->
+      <section>
+        <form id="crearProducto">
+          <br />
+          <input
+            id="inputMarca"
+            type="text"
+            placeholder="Ingrese el marca"
+            size="50px"
+          />
+          <br />
+          <input
+            id="inputModelo"
+            type="text"
+            placeholder="Ingrese el modelo"
+            autocomplete="off"
+            size="50px"
+          />
+          <br />
+          <input
+            id="inputPrecio"
+            type="number"
+            placeholder="Ingrese el precio"
+            size="50px"
+          />
+          <br />
+          <button type="submit">Crear</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="resultadoDeLaCompra"></div>
+
+    <!--TEMPLATE CREACION DE PRODUCTOS-->
+    <template id="producto">
+      <h3 id="nombre"></h3>
+      <p id="modelo"></p>
+      <var id="precio"></var>
+      <button id="comprar">Comprar</button>
+    </template>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--CAMADA 14470-->
+    <script src="ptueba.js"></script>
+  </body>
+</html>

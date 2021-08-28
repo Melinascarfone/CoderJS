@@ -1,0 +1,15 @@
+{
+ "datosServicios":[{
+                        "id" : 1 ,
+                        "nombre" : "Impresion de fotos" ,
+                        "datos" : "Imprimi todas tus fotos en papel ilustracion de las medidas que quieras!" ,
+                        "imagen" : "../galeria/fotos.jpg"
+                    },
+                    {
+                        "id" : 2 ,
+                        "nombre" : "Diseño de tarjetas" ,
+                        "datos" : "Diseñamos tus tarjetas profesionales, para emperndimientos, cumpleaños, y para todo lo que necesites!" ,
+                        "imagen" : "../galeria/tarjetas.png"
+                    }
+    ]
+}
